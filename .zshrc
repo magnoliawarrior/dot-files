@@ -104,4 +104,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # # vi binding
 bindkey -v
-alias config='/usr/bin/git --git-dir=/home/chen/.cfg/ --work-tree=/home/chen'
+alias config='/usr/bin/git --git-dir=/home/chen/.myconf/ --work-tree=/home/chen'
