@@ -75,6 +75,7 @@ plugins=(
 	zsh-autosuggestions
 	k
 	history-substring-search
+	history-search-multi-word
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -133,4 +134,6 @@ alias config='/usr/bin/git --git-dir=/home/chen/.myconf/ --work-tree=/home/chen'
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+bindkey "^R" history-search-multi-word
 
