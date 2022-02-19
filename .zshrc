@@ -72,6 +72,8 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
+	zsh-autosuggestions
+	k
 	history-substring-search
 )
 
@@ -128,3 +130,7 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 alias config='/usr/bin/git --git-dir=/home/chen/.myconf/ --work-tree=/home/chen'
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
